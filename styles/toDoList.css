@@ -1,0 +1,87 @@
+.toDoForm input {
+  font-size: 20px;
+  outline: none;
+  margin: 15px 0px;
+  opacity: 0.6;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/*  keyframe 'selectedAnim' is defined in 'styles.css' */
+
+.toDoForm input:focus {
+  opacity: 0.9;
+  animation: selectedAnim 0.2s linear;
+}
+
+.toDoList li {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.toDoList span {
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  margin: 0px 10px;
+}
+
+.toDoList button {
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  width: 15px;
+}
+
+.strike {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.toDoTitle {
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  margin: 5px 5px 15px;
+}
+
+.notshowing {
+  display: none;
+}
+
+@media screen and (min-width: 1500px) {
+  .toDoList {
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: 2%;
+
+    max-width: 400px;
+    min-width: 150px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+  .toDoTitle {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+  }
+}
+@media screen and (max-width: 1499px) {
+  .toDoList {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+}

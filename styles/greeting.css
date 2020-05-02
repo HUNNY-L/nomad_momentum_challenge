@@ -1,0 +1,44 @@
+.form,
+.greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.form input {
+  font-size: 20px;
+  outline: none;
+  margin: 15px 0px;
+  opacity: 0.6;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/*  keyframe 'selectedAnim' is defined in 'styles.css' */
+.form input:focus {
+  opacity: 0.9;
+  animation: selectedAnim 0.2s linear;
+}
+
+.greeting {
+  font-size: 40px;
+  font-weight: 400;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  transition: all 1s linear;
+}
+
+@media screen and (min-width: 800px) {
+  .greeting {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .greeting {
+    font-size: 20px;
+  }
+}

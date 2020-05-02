@@ -1,0 +1,36 @@
+/* 
+1 : Photo by Jason Leung on Unsplash
+2 : Photo by Billy Huynh on Unsplash
+3 : Photo by Erol Ahmed on Unsplash
+4 : Photo by Brooke Lark on Unsplash
+5 : Photo by Kimberly Farmer on Unsplash
+6 : Photo by Alex on Unsplash
+7 : Photo by Clem Onojeghuo on Unsplashs
+*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+  /* animation: fadeIn 0.5s linear; */
+}
+
+.photoBy {
+  position: fixed;
+  top: 130px;
+  left: 5px;
+  margin: 2px;
+  color: white;
+  font-size: 10px;
+  text-shadow: 3px 3px 10px black, 5px 5px 20px white;
+}
